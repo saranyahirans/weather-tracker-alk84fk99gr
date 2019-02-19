@@ -1,0 +1,75 @@
+{
+  "name": "@c1-code-test/take-home-tester",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "babel src -d dist --source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "take-home-integration-test": "dist/bin/take-home-integration-test.js"
+  },
+  "files": [
+    "features/**/*.feature",
+    "dist/**"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "engine": {
+    "node": ">=8.9"
+  },
+  "engineStrict": true,
+  "babel": {
+    "sourceMaps": true,
+    "plugins": [
+      "add-module-exports"
+    ],
+    "presets": [
+      "stage-2",
+      [
+        "env",
+        {
+          "targets": {
+            "node": "8.9"
+          },
+          "exclude": [
+            "transform-regenerator"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.0.0",
+    "cli-table": "^0.3.1",
+    "commander": "^2.19.0",
+    "cross-spawn": "^6.0.5",
+    "cucumber": "3.0.6",
+    "debug": "^3.2.6",
+    "dirty-chai": "^2.0.0",
+    "get-port": "^4.0.0",
+    "get-stream": "^3.0.0",
+    "indent-string": "^3.2.0",
+    "ramda": "^0.24.1",
+    "request": "^2.81.0",
+    "request-debug": "^0.2.0",
+    "request-promise": "^4.2.1",
+    "shell-quote": "^1.6.1",
+    "source-map-support": "^0.4.16",
+    "strip-ansi": "^4.0.0",
+    "taskkill": "^2.0.0",
+    "verror": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.5.0"
+  }
+}

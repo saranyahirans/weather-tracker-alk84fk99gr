@@ -1,0 +1,14 @@
+com/capitalone/weathertracker/statistics/StatsResource.class
+com/capitalone/weathertracker/statistics/StatisticConverter.class
+com/capitalone/weathertracker/measurements/MeasurementsResource.class
+com/capitalone/weathertracker/DateSerializationConfiguration.class
+com/capitalone/weathertracker/measurements/MeasurementStore.class
+com/capitalone/weathertracker/statistics/AggregateResult.class
+com/capitalone/weathertracker/DateSerializationConfiguration$ZonedDateTimeConverter.class
+com/capitalone/weathertracker/measurements/Measurement$Builder.class
+com/capitalone/weathertracker/statistics/MeasurementAggregator.class
+com/capitalone/weathertracker/statistics/Statistic.class
+com/capitalone/weathertracker/WeatherTrackerApplication.class
+com/capitalone/weathertracker/measurements/MeasurementQueryService.class
+com/capitalone/weathertracker/NotImplementedService.class
+com/capitalone/weathertracker/measurements/Measurement.class
